@@ -1,0 +1,41 @@
+-- Create Database
+CREATE SCHEMA miit_sept_24;
+CREATE DATABASE miit_sept1_24;
+
+-- Get list of all the database/Schema
+show databases;
+SHOW SCHEMAS;
+
+-- Choose database
+use miit_sept_24;
+-- create a table 
+CREATE TABLE `miit_sept_24`.`tbl_customer` (
+  `custId` INT NOT NULL AUTO_INCREMENT,
+  `firstName` VARCHAR(45) NULL,
+  `lastName` VARCHAR(45) NULL,
+  `amount` DECIMAL(7,2) NULL,
+  PRIMARY KEY (`custId`));
+  
+CREATE TABLE miit_sept_24.tbl_student
+(
+	studentId int AUTO_INCREMENT NOT NULL,
+    studentFirstName varchar(45),
+    studentLastName	varchar(45),
+    batch varchar(45),
+    PRIMARY KEY(studentId)
+);
+
+-- Remove table
+DROP TABLE `miit`.`tbl_student`;
+
+
+
+
+-- Drop database
+DROP SCHEMA miit_schema_24;
+
+
+
+
+
+
