@@ -1,3 +1,4 @@
+-- Database Queries
 -- Create Database
 CREATE SCHEMA miit_sept_24;
 CREATE DATABASE miit_sept1_24;
